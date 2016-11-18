@@ -13,3 +13,5 @@ services:
         external_links:
             - apollo_http_1
             - apollo_ror_1
+            - poseidon_http_1
+            - poseidon_ror_1
