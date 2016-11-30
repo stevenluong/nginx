@@ -2,16 +2,16 @@ version: '2'
 services:
     nginx:
         build: .
-#      links:
-#            - apollo_ror_1:apollo_ror_1
-#            - apollo_http_1:apollo_http_1
         ports:
             - "8888:80"
         volumes:
             - ./nginx.conf:/etc/nginx/nginx.conf
+            - ./data:/nginx/data
+            - ./logs:/nginx/logs
         restart: always
         external_links:
             - apollo_http_1
             - apollo_ror_1
             - poseidon_http_1
             - poseidon_ror_1
+              #- wp1_wordpress_1
