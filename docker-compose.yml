@@ -15,4 +15,6 @@ services:
             - poseidon_http_1
             - poseidon_ror_1
             - poseidon_node_1
+            - hephaistos_ror_1
+            - hephaistos_http_1
               #- wp1_wordpress_1
