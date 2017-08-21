@@ -4,18 +4,12 @@ services:
         build: .
         ports:
             - "80:80"
+            - "443:443"
         volumes:
             - ./nginx.conf:/etc/nginx/nginx.conf
             - ./conf:/etc/nginx/conf
             - ./logs:/nginx/logs
+            - ./private:/etc/nginx/private
         restart: always
         external_links:
-            - apollo_http_1
-            - apollo_ror_1
-            - poseidon_http_1
-            - poseidon_ror_1
-            - poseidon_node_1
-            - hephaistos_ror_1
-            - hephaistos_http_1
-            - youcommentcom_http_1 
-            - youcommentcom_loopback_1 
+            - redbutton_ionic_1 
