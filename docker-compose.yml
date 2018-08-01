@@ -11,5 +11,3 @@ services:
             - ./logs:/nginx/logs
             - ./private:/etc/nginx/private
         restart: always
-        external_links:
-            - redbutton_ionic_1 
