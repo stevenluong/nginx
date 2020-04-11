@@ -12,10 +12,8 @@ services:
             - ./private:/etc/nginx/private
         restart: always
         networks:
-            - elk_elk
+                #            - elk_elk
             - default
 networks:
     default:
         driver: bridge
-    elk_elk:
-        external: true
