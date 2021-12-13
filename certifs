@@ -1,0 +1,4 @@
+sudo certbot-auto certonly --preferred-challenges dns --manual -d *.steven-luong.com -d steven-luong.com
+sudo certbot-auto certonly --preferred-challenges dns --manual -d *.taraluongtattoo.com -d taraluongtattoo.com
+sudo certbot-auto certonly --preferred-challenges dns --manual -d *.slapps.fr -d slapps.fr
+sudo certbot-auto certonly --preferred-challenges dns --manual -d *.biz-rockets.com -d biz-rockets.com

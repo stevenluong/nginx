@@ -15,9 +15,9 @@ services:
         networks:
                 #            - elk_elk
             - default
-            - minikube
+#            - minikube
 networks: 
-    minikube:
-        external: true
+#    minikube:
+#        external: true
     default:
         driver: bridge
